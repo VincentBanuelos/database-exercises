@@ -2,7 +2,9 @@
 USE albums_db;
 
 -- 3. Explore the structure of the albums table.
+SHOW TABLES;
 
+DESCRIBE albums;
 
 -- a. How many rows are in the albums table? (A. 31)
 -- This will allow me to see everything in the albums table
@@ -14,6 +16,7 @@ SELECT COUNT(DISTINCT artist) FROM albums;
 DESCRIBE albums;
 /* d.What is the oldest release date for any album in the albums table? What is the most recent release date?
 (A. 1967, 2011) */
+SELECT * FROM albums;
 
 -- Write queries to find the following information:
 
@@ -35,7 +38,7 @@ WHERE name = 'Nevermind';
 -- Which albums were released in the 1990s
 SELECT name, release_date
 FROM albums
-WHERE release_date > 1990;
+WHERE release_date between '1990' and '1999';
 
 -- Which albums had less than 20 million certified sales
 SELECT name, sales

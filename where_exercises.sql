@@ -49,7 +49,7 @@ SELECT * FROM employees
 WHERE last_name LIKE '%E';
 
 /* 8. Find all current or previous employees hired in the 90s. 
-Enter a comment with the number of employees returned. (A. 1000 employees were hired in the 90's)*/
+Enter a comment with the number of employees returned. (A. 135214 employees were hired in the 90's)*/
 SELECT * FROM employees
 WHERE hire_date BETWEEN '1990-01-01' and '1999-12-31';
 

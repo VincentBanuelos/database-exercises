@@ -34,7 +34,7 @@ Enter a comment with the number of employees whose last name starts or ends with
 SELECT * FROM employees
 WHERE last_name LIKE 'E%' OR last_name LIKE '%E';
 
-/* (6. Continued) How many employees have a last name that ends with E, but does not start with E? (A. 1000 employees have names that end with 'E' but do not start with 'E' */
+/* (6. Continued) How many employees have a last name that ends with E, but does not start with E? (A. 23393 employees have names that end with 'E' but do not start with 'E' */
 SELECT * FROM employees
 WHERE last_name LIKE '%E' AND last_name NOT LIKE 'E%';
 
